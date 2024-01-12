@@ -44,8 +44,8 @@ const Project = () => {
       des: "Welcome to my portfolio! I am a passionate Full Stack Developer with a strong foundation in Node.js and React.js. With a keen eye for detail and a commitment to delivering high-quality software solutions, I thrive in creating seamless and responsive web applications.",
       techs: ["Reactjs", "Tailwind"],
       img: por,
-    
-      git: "https://github.com/TranDuongThieu/Ecommerce-Client",
+      link: "https://thiuiettiu.vercel.app/",
+      git: "https://github.com/TranDuongThieu/porfolio",
       type: 2,
       date: "January 12, 2023"
     },

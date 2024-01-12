@@ -40,9 +40,11 @@ const Home = () => {
                         />
                     </div>
                     <div className="flex gap-5 my-5 items-center">
-                        <div className={`cursor-pointer  hover:text-blue-500  transition duration-200 ease-in-out `}> <GitIcon /></div>
+                        <a href="https://github.com/TranDuongThieu" target="_blank" rel="noreferrer" className={`cursor-pointer  hover:text-blue-500  transition duration-200 ease-in-out `}> <GitIcon /></a>
 
-                        < div className={`cursor-pointer  hover:text-blue-500  transition duration-200 ease-in-out `}> <FaFacebookF size={25} /></div>
+                        <a href="https://www.facebook.com/thiuiettiu" target="_blank" rel="noreferrer" className={`cursor-pointer  hover:text-blue-500  transition duration-200 ease-in-out `}>
+                            <FaFacebookF size={25} />
+                        </a>
                     </div>
                 </div>
                 <div className={`flex-none w-[300px] ${width !== 3 && "order-1"}`}>
