@@ -53,7 +53,7 @@ const Header = () => {
     }, [width])
     return (
 
-        <div className={`flex justify-between h-[65px] py-[15px] font-semibold relative z-50 items-center ${width === 2 ? "px-5 text-[17px]" : width === 1 ? "px-2 text-[15px]" : " px-[50px] text-[17px]"}`}>
+        <div className={`flex justify-between h-[65px] py-[15px] font-semibold relative items-center ${width === 2 ? "px-5 text-[17px]" : width === 1 ? "px-2 text-[15px]" : " px-[50px] text-[17px]"}`}>
             <Link
                 href="#HOME"
                 to="HOME"
@@ -95,7 +95,7 @@ const Header = () => {
                         />
 
                         <div
-                            className={`flex px-[60px] rounded-b-lg flex-col absolute top-[48px] right-[-10px] border-t p-3 shadow-lg z-50 duration-300  ${mode === "light" ? "bg-white" : "bg-[#282828]"} ${isDropdown ? "opacity-100 visible" : "opacity-0 invisible"} `}
+                            className={`flex px-[60px] rounded-b-lg flex-col absolute top-[48px] right-[-10px] border-t p-3 shadow-lg z-50 duration-300  ${mode === "light" ? "bg-white" : "bg-black border border-gray-600"} ${isDropdown ? "opacity-100 visible" : "opacity-0 invisible"} `}
                             style={{
                                 transform: isDropdown ? "translateX(0) " : "translateX(150%) ",
                                 transition: "all 0.3s ease-in-out", // Adjust the duration and easing function

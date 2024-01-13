@@ -34,7 +34,7 @@ const About = () => {
                     {width === 3 && <p className="text-blue-600 text-[18px] font-poppins font-extrabold">ABOUT ME</p>}
 
                     <p className={`text-[25px] font-poppins font-bold ${width === 1 && "text-center mb-5"}`}>A dedicated Front-end Developer 📍</p>
-                    <div className="flex flex-col  gap-2 text-gray-500 text-justify "
+                    <div className="flex flex-col  gap-2 opacity-70 text-justify "
                     >
                         {sentences.map((sentence, index) => (
                             <div

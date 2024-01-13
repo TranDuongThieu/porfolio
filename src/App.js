@@ -95,7 +95,7 @@ function App() {
                     <div
                         style={buttonBorderStyle}
                         onClick={scrollToTop}
-                        className={`p-3 duration-700 flex items-center justify-center shadow-2xl border-[2px] cursor-pointer rounded-md fixed hover:text-blue-500 ${width === 3 ?" bottom-10 right-10" : "bottom-2 right-2"} ${mode === "light" ? "bg-white" : "bg-black"}`}
+                        className={`p-3 duration-700 flex z-50 items-center justify-center shadow-2xl border-[2px] cursor-pointer rounded-md fixed hover:text-blue-500 ${width === 3 ? " bottom-10 right-10" : "bottom-2 right-2"} ${mode === "light" ? "bg-white" : "bg-black"}`}
                     >
                         <FaArrowUp size={25} />
                     </div>
@@ -118,36 +118,36 @@ function App() {
                             <Home />
                         </div>
 
-                        {width !== 1 &&
-                            <div
-                                className={`flex gap-8 items-center  py-10  ${width === 1 ? "px-[10px]" : width === 2 ? "px-[50px]" : "px-[170px]"}  ${mode === "light" ? "bg-[#EFEFEF]" : "bg-[#212121]"
-                                    }`}
-                                style={{ transition: "background-color 1s ease, border-color 1s ease" }}
-                            >
-                                <div className="pr-8 border-r-4 text-[18px] whitespace-nowrap">Tech Stack</div>
-                                <div className="flex items-center gap-4 flex-wrap">
-                                    <img
-                                        src={icon1}
-                                        alt=""
-                                        className="hover:translate-y-[-20px] duration-200"
-                                    />
-                                    <img
-                                        src={icon2}
-                                        alt=""
-                                        className="hover:translate-y-[-20px] duration-200"
-                                    />
-                                    <img
-                                        src={icon3}
-                                        alt=""
-                                        className="hover:translate-y-[-20px] duration-200"
-                                    />
-                                    <img
-                                        src={icon4}
-                                        alt=""
-                                        className="hover:translate-y-[-20px] duration-200"
-                                    />
-                                </div>
-                            </div>}
+
+                        <div
+                            className={`flex gap-8 items-center  pt-3 pb-10 ${width === 1 ? "px-[10px]" : width === 2 ? "px-[50px]" : "px-[170px]"}  ${mode === "light" ? "bg-[#EFEFEF]" : "bg-[#212121]"
+                                }`}
+                            style={{ transition: "background-color 1s ease, border-color 1s ease" }}
+                        >
+                            {width ===3 && <div className="pr-8 border-r-4 text-[18px] whitespace-nowrap">Tech Stack</div>}
+                            <div className="flex items-center justify-center gap-4 flex-wrap">
+                                <img
+                                    src={icon1}
+                                    alt=""
+                                    className="hover:translate-y-[-20px] duration-200"
+                                />
+                                <img
+                                    src={icon2}
+                                    alt=""
+                                    className="hover:translate-y-[-20px] duration-200"
+                                />
+                                <img
+                                    src={icon3}
+                                    alt=""
+                                    className="hover:translate-y-[-20px] duration-200"
+                                />
+                                <img
+                                    src={icon4}
+                                    alt=""
+                                    className="hover:translate-y-[-20px] duration-200"
+                                />
+                            </div>
+                        </div>
 
                         <div
                             id="ABOUT"

@@ -14,7 +14,7 @@ const ProjectCard = ({ project }) => {
     return (
         <div
             style={{ transition: "background-color 1s ease, border-color 1s ease" }}
-            className={`flex gap-10 p-5 border shadow-xl rounded-lg h-fit flex-wrap ${width !== 3 && "justify-center"} ${mode === 'dark' ? "bg-[#121212]" : "bg-white "}}`}>
+            className={`flex gap-10 p-5 border shadow-xl rounded-lg h-fit flex-wrap ${width !== 3 && "justify-center"} ${mode === 'dark' ? "bg-black border-gray-600 " : "bg-white "}}`}>
             {width !== 3 &&
                 <a
                     href={project?.link}
@@ -31,7 +31,7 @@ const ProjectCard = ({ project }) => {
                 rel="noreferrer">
                 <img src={project?.img} alt="" className='w-full object-top rounded-xl  hover:translate-y-[-78%] duration-[10s]' />
             </a>
-            <div className="flex flex-1 flex-col gap-8 items-center justify-center px-5 ">
+            <div className="flex flex-1 flex-col gap-8 items-center justify-center  ">
                 {width === 3 &&
                     <a
                         href={project?.link}
@@ -41,7 +41,7 @@ const ProjectCard = ({ project }) => {
                         <span className="text-xl ml-3">({project.date})</span>
                     </a>}
 
-                <span className={` text-gray-500 font-medium ${width === 3 ? "text-center" : "text-justify"}`}> {project?.des}</span>
+                <span className={` opacity-70 font-medium text-center `}> {project?.des}</span>
                 <div className="flex gap-3">
                     {project?.techs?.map(tech => <div className="px-3 py-2 cursor-pointer border shadow-md duration-300  ">{tech}</div>)}
                 </div>

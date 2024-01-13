@@ -34,14 +34,14 @@ const Project = () => {
       des: "Welcome to Digital World, your premier online destination for seamless e-commerce experiences in the tech realm. Explore a diverse marketplace where buying and selling mobile phones, laptops, tablets, and more is made effortless. Engage in dynamic auctions for exclusive tech finds, ensuring you get the best deals in a competitive digital environment.",
       techs: ["MongoDb", "Nodejs", "Reactjs"],
       img: cm,
-      link: "https://thiu-movie.vercel.app/",
+      link: "https://thiu-ecommerce.vercel.app",
       git: "https://github.com/TranDuongThieu/Ecommerce-Client",
       type: 1,
       date: "November, 2023"
     },
     {
       title: "Portfolio",
-      des: "Welcome to my portfolio! I am a passionate Full Stack Developer with a strong foundation in Node.js and React.js. With a keen eye for detail and a commitment to delivering high-quality software solutions, I thrive in creating seamless and responsive web applications.",
+      des: "Welcome to my portfolio! I am a passionate Full Stack Developer with a strong foundation in React.js and Tailwind. With a keen eye for detail and a commitment to delivering high-quality software solutions, I thrive in creating seamless and responsive web applications.",
       techs: ["Reactjs", "Tailwind"],
       img: por,
       link: "https://thiuiettiu.vercel.app/",

@@ -28,7 +28,7 @@ const Home = () => {
                         </div>
 
                     </div>
-                    <div className={`tracking-widest text-[20px] leading-8 ${width !== 3 ? "w-full px-5 text-center" : "w-[600px] text-justify  "}`}>
+                    <div className={`tracking-widest text-[20px] leading-8 ${width !== 3 ? "w-full px-5 text-center " : "w-[600px] text-justify  "} ${width===1 && "h-[150px]"}`}>
                         <Typewriter
                             words={sentences}
                             loop={false}

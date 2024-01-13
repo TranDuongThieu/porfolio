@@ -16,7 +16,7 @@ const Contact = () => {
       icon: <TbMapSearch size={width === 3 ? 30 : 25} />
     },
     {
-      name: "Mail",
+      name: "Gmail",
       des: "tranduongthieuhcmute@gmail.com",
       icon: <CiMail size={width === 3 ? 30 : 25} />
     },
@@ -39,7 +39,7 @@ const Contact = () => {
         <h1 className={`text-[#2c7ffb]  font-bold font-poppins ${width === 3 ? "text-[20px] " : "text-[18px]"}`}>CONTACT</h1>
 
         <h1 className={`font-bold font-poppins ${width === 3 ? "text-[25px] " : "text-[20px]"}`}>Don't be shy! Hit me up! 👇</h1>
-        <div className="flex items-center gap-20 flex-wrap ">
+        <div className={`flex  flex-wrap ${width === 1 ? "flex-col gap-5 justify-start items-start" : "items-center gap-20 "}`}>
           {contacts.map(contact => (
             <div className="flex items-center gap-4 justify-center">
               <div className='p-2 rounded-full border shadow-lg text-blue-500'>
